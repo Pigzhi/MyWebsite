@@ -1,0 +1,40 @@
+.icon-btn {
+    color: rgb(59, 35, 35);
+    font-size: 25px;
+    text-decoration: none;
+    transition: color 1s, border 1s;/* 摸到時反應的ˊ速度 */
+    border-radius: 30%; /* 邊框 */
+    background-color: transparent;
+    padding: 10px;
+}
+
+.icon-btn:hover {
+    color: white;
+    /* 屬標摸到時的顏色 */
+    background-color: rgb(85, 70, 70);
+    /* 懸停時背景得顏色 */
+}
+.top-right-icons {
+    position: fixed; 
+    top: 10px;     
+    right: 20px;    
+    z-index: 1000;  
+    display: flex;  
+    gap: 5px;       /* 按鈕間距 */
+}
+
+
+/* 設定固定在上面的捲動設計 */
+.header{
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /*陰影的效果*/
+    transition: top 0.5s ease;
+}
+.header.hide{
+    top:-80px;
+}

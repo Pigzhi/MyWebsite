@@ -1,0 +1,62 @@
+/* 排版基礎樣式 */
+.top-right-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+.tablink {
+    flex: 1 1 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+/* 讓 tablink 按鈕們可包在一層中方便控制 */
+.tab-buttons {
+    /* background-color: rgb(252, 252, 252); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* 響應式設計：當螢幕小於 600px 時改成垂直排列 */
+@media (max-width: 600px) {
+    .top-right-icons {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tablink {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* 設定固定在上面的捲動設計 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*陰影的效果*/
+    transition: top 0.5s ease;
+}
+
+.header.hide {
+    top: -80px;
+}
