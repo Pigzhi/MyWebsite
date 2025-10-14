@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+   
+</head>
+
+<body>
+    <button id="OpenLoginBtn">登入</button>
+    <div id="loginModal" class="modal"> <!--視窗彈出-->
+        <div id="modal-content"><!--登入窗區塊-->
+            <label>帳號</label> <!--placeholder 預設input裡的字-->
+            <input id="username" type="text" placeholder="輸入帳號"> <br>
+            <label>密碼</label>
+            <input id="password" type="password" placeholder="輸入密碼"> <br>
+            <div>
+                <button id="loginbtn">login</button>
+                <button class="close" id="closebtn">cancel</button>
+            </div>
+            <div class="msg" id="msg"></div>
+        </div>
+    </div>
+
+
+<script>
+    const openbtn=document.getElementById('OpenLoginBtn')
+    const modal = document.getElementById('loginModal')
+    const msg = document.getElementById('msg')
+    openbtn.onclick=()=>{
+        modal.style.display ="flex";
+        msg.innerText=''; //清除字串
+    }
+</script>
+</body>
+
+</html>
