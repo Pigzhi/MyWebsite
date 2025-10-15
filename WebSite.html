@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mm</title>
-    <link rel="stylesheet" href="./css/三條線.css">
     <link rel="stylesheet" href="./css/連結顏色.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/小圖示.css">
     <link rel="stylesheet" href="/css/響應式.css">
     <link rel="stylesheet" href="./css/幻燈片.css">
+    <link rel="stylesheet" href="./css/公告.css">
+    <link rel="stylesheet" href="./css/字體.css">
     <style>
         body {
             padding-top: 80px;
@@ -27,28 +28,29 @@
 
     <!--  -->
     <div class="header">
-        <div class="top-right-icons">
-            <a href="#login" class="icon-btn" title="登入"><i class="fas fa-user"></i></a>
-            <a href="#cart" class="icon-btn" title="購物車"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#search" class="icon-btn" title="搜尋"><i class="fas fa-search"></i></a>
-        </div>
+
         <div>
-            <h1 style="font-size: 50px;
-         font-family:monospace ;
-         text-align: center; 
-         margin: auto;">*** </h1>
+            <a href=""></a>
+            <nav class="TOP" style="color: transparent;">.</nav>
+            <div class="top-right-icons">
+                <a href="#login" class="icon-btn" title="登入"><i class="fas fa-user"></i></a>
+                <a href="#cart" class="icon-btn" title="購物車"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#search" class="icon-btn" title="搜尋"><i class="fas fa-search"></i></a>
+            </div>
         </div>
         <hr style="border: 60px;">
     </div>
+    <div>
+        <nav class="TOP1" style="color: transparent;">.</nav>
+    </div>
     <div class="tab-buttons">
-        <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">HOMEPAGE</button>
-        <button class="tablink" onclick="openPage('Cloth', this, 'green')">衣服</button>
-        <button class="tablink" onclick="openPage('pants', this, 'blue')">褲子</button>
+        <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">首頁</button>
+        <button class="tablink" onclick="openPage('Cloth', this, 'green')">NEW更新消息</button>
+        <button class="tablink" onclick="openPage('pants', this, 'blue')">更新檔案</button>
         <button class="tablink" onclick="openPage('shoes', this, 'orange')">鞋子</button>
     </div>
+    <!-- 首頁的頁面 -->
     <div id="Home" class="tabcontent">
-        <h3>HOMEPAGE</h3>
-        <p>..</p>
         <!-- 幻燈片 -->
         <div class="slideshow-container">
 
@@ -71,8 +73,8 @@
                 <div class="numbertext">4/4</div>
                 <img src="./photo/小巴.png" style="width: 100%;">
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
         </div>
         <br>
         <div style="text-align: center;">
@@ -81,22 +83,139 @@
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
+
+        <br><br><br><br><br>
+
+        <!-- 公告欄 -->
+        <div class="all-tab">
+            <div class="tabs">
+                <a class="tabs-size" href=""> 全部 </a>
+                <a class="tabs-size" href=""> 更新 </a>
+                <a class="tabs-size" href=""> 重要 </a>
+                <a class="tabs-size" href=""> 活動 </a>
+            </div>
+            <div class="big-line">
+                <a class="lines"
+                    href="https://drive.usercontent.google.com/download?id=1B56n5TcNkKU6rUKmXM1RzOmU56xe3Ly9&export=download&authuser=0">
+                    <div class="lines-1">2025/10/15</div>
+                    <div class="lines-2">更新</div>
+                    <div class="lines-3">v114版本更新檔</div>
+                </a>
+                <a class="lines"
+                    href="https://drive.usercontent.google.com/download?id=1B56n5TcNkKU6rUKmXM1RzOmU56xe3Ly9&export=download&authuser=0">
+                    <div class="lines-1">2025/09/13</div>
+                    <div class="lines-2">更新</div>
+                    <div class="lines-3">v113.1版本更新檔</div>
+                </a>
+                <a class="lines"
+                    href="https://drive.usercontent.google.com/download?id=1B56n5TcNkKU6rUKmXM1RzOmU56xe3Ly9&export=download&authuser=0">
+                    <div class="lines-1">2025/09/01</div>
+                    <div class="lines-2">更新</div>
+                    <div class="lines-3">v113版本更新檔</div>
+                </a>
+                <a class="lines"
+                    href="https://drive.usercontent.google.com/download?id=1B56n5TcNkKU6rUKmXM1RzOmU56xe3Ly9&export=download&authuser=0">
+                    <div class="lines-1">2025/08/05</div>
+                    <div class="lines-2">更新</div>
+                    <div class="lines-3">v112版本更新檔</div>
+                </a>
+                <a class="lines" href="http://127.0.0.1:5500/Fix.html">
+                    <div class="lines-1">2025/08/04</div>
+                    <div class="lines-important">重要</div>
+                    <div class="lines-3 fixtime">2025/08/04 維修時間 (am9:00~pm1:00)</div>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <!--  -->
-
+    <!-- 第二頁 -->
     <div id="Cloth" class="tabcontent">
-        <h3>衣服</h3>
-        <p>Some news this fine day!</p>
-    </div>
+        <h3 class="status">更新消息</h3>
+    <p style="font-size: 25px;">一、活動內容</p>
+        <p>
+            <span style="color: rgb(91, 91, 211);">
+                <span style="font-size: 20px;">
+                    <strong>【地球防衛總部的怪物們】</strong>
+                </span>
+            </span>
+            <span style="color: rgb(247, 71, 100);">
+                <span style="font-size: 15px;">
+                    <strong>news</strong>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(244, 35, 28);">
+                <span style="font-size: 15px;">
+                    <strong>活動時間：2025/10/16(四)維護後 ~ 2025/11/25 (二)23:59</strong>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(0, 0, 0);">
+                <span style="font-size: 15px;">
+                    <span>好評加開到11/25，</span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(0, 0, 0);">
+                <span style="font-size: 15px;">
+                    <span>可以一直一直一直玩到9999天，</span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(0, 0, 0);">
+                <span style="font-size: 15px;">
+                    <span>但只能解成就和兌換限定特效。</span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(91, 91, 211);">
+                <span style="font-size: 25px;">
+                    <strong>【次元的鬧鬼宅邸】</strong>
+                </span>
+            </span>
+            <span style="color: rgb(247, 71, 100);">
+                <span style="font-size: 15px;">
+                    <strong>news</strong>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(244, 35, 28);">
+                <span style="font-size: 15px;">
+                    <strong>活動時間：2025/10/20(日)維護後 ~ 2025/11/04 (二)23:59</strong>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(0, 0, 0);">
+                <span style="font-size: 15px;">
+                    <span>不是黑暗鬼屋，這是鬧鬼宅邸，</span>
+                </span>
+            </span>
+        </p>
+        <p>
+            <span style="color: rgb(0, 0, 0);">
+                <span style="font-size: 15px;">
+                    <span>達成指定條件，可以獲得時裝、騎寵、聊天貼圖、背景交換券。</span>
+                </span>
+            </span>
+        </p>
 
+    <p style="font-size: 25px;">二、更新內容</p>
+    </div>
+    <!-- 第三頁 -->
     <div id="pants" class="tabcontent">
-        <h3>褲子</h3>
+        <h3>更新檔案</h3>
         <p>Get in touch, or swing by for a cup of coffee.</p>
     </div>
-
+    <!-- 第四頁 -->
     <div id="shoes" class="tabcontent">
-        <h3>鞋子</h3>
+        <h3></h3>
         <p>Who we are and what we do.</p>
     </div>
 
@@ -166,6 +285,8 @@
             dots[slideIndex - 1].className += " active";
             setTimeout(showSlides, 2000);
         }
+        // news
+        // $('#news').append(`<li>${new1}</li>`)
     </script>
 </body>
 

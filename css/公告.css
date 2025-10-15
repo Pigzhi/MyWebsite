@@ -1,0 +1,94 @@
+.tabs {
+    font-size: 55px;
+    padding: 15px;
+    border-color: rgb(86, 52, 24);
+    border-radius: 0px;
+    border-style: double none none none;
+    border-width: 5px 10px 5px 10px;
+    margin: 20px;
+}
+
+.tabs-size {
+    margin: 30px;
+    font-family: "sans-serif", sans-serif, "微軟正黑體", arial;
+    display: inline-block;
+    text-decoration: none;
+    /*把a連結底下的線體刪除*/
+    color: rgb(237, 131, 131);
+    font-size: 36px;
+}
+
+.big-line {
+    position: absolute;
+    /*解除div限制 可以用left top...等*/
+    left: 120px;
+}
+
+.lines {
+    font-size: 26px;
+    min-width: 300px;
+    padding: 0 0 25px 140px;
+    text-decoration: none;
+    color: #363535;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    /*讓div能在同一行內 */
+    align-items: center;
+    gap: 12px;
+    /*間距 */
+    line-height: 1.4;
+    /*垂直的高 */
+}
+
+.lines-1 {
+    left: 0px;
+    top: 0px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.lines-2 {
+    background-color: rgb(56, 56, 127);
+    color: rgb(203, 158, 158);
+    top: -2;
+    width: 100px;
+    text-align: center;
+    /*字體對中*/
+}
+
+.lines-important {
+    background-color: rgb(246, 48, 78);
+    color: rgb(231, 223, 223);
+    width: 100px;
+    text-align: center;
+    top: -2;
+}
+
+.fixtime {
+    color: red;
+}
+
+.all-tab {
+    padding: 40px;
+    /* position:absolute; */
+}
+
+
+
+.TOP {
+    background-image: url(../photo/title.jpg) ;
+    font-size: 200px; font-family:monospace ;
+    text-align: center;
+     margin: auto; 
+     background-size: cover;
+    background-position: center;    } 
+
+.TOP1{
+     background-image: url(../photo/title.jpg) ;
+    font-size: 130px; font-family:monospace ;
+    text-align: center;
+     margin: auto; 
+     background-size: cover;
+    background-position: center;    
+}

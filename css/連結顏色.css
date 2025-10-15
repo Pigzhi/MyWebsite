@@ -6,15 +6,16 @@ body, html {
 
 /* Style tab links */
 .tablink {
-  background-color: #493939;
+  /* background-color: #493939; */
+  background-image: url(../photo/tabs.png);
   color: white;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
   width: 25%;
+  
 }
 
 .tablink:hover {
@@ -31,6 +32,12 @@ body, html {
 
 
 #Home {background-color: rgb(255, 255, 255);}
-#Cloth {background-color: green;}
-#pants {background-color: blue;}
-#shoes {background-color: orange;}
+#Cloth {background-color: rgb(255, 255, 255);}
+#pants {background-color: rgb(255, 255, 255);}
+#shoes {background-color: rgb(255, 255, 255);}
+
+.status{
+  font-size: 47px;
+  text-align: center;
+  color: rgb(72, 24, 72);
+}
