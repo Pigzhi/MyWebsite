@@ -4,18 +4,20 @@
     border-color: rgb(86, 52, 24);
     border-radius: 0px;
     border-style: double none none none;
-    border-width: 5px 10px 5px 10px;
+    border-width: 5px; /*兩條線的寬度*/
     margin: 20px;
 }
 
 .tabs-size {
-    margin: 30px;
-    font-family: "sans-serif", sans-serif, "微軟正黑體", arial;
+    margin: 40px;
+    /* font-family:  "BBH Sans Hegarty","微軟正黑體","PingFangTC-Regular","sans-serif"; */
     display: inline-block;
     text-decoration: none;
     /*把a連結底下的線體刪除*/
-    color: rgb(237, 131, 131);
-    font-size: 36px;
+    color:rgb(224, 210, 210);
+    -webkit-text-stroke: 2px rgb(230, 170, 170);
+    font-size: 50px;
+    text-shadow: 0 0 20px rgb(197, 148, 234);
 }
 
 .big-line {
@@ -68,7 +70,16 @@
 .fixtime {
     color: red;
 }
-
+.lines-updata{
+    background-color: rgb(199, 140, 3);
+    color: rgb(255, 255, 255);
+    width: 100px;
+    text-align: center;
+    top: -2;
+}
+.Activity{
+    color: rgb(32, 80, 239);
+}
 .all-tab {
     padding: 40px;
     /* position:absolute; */

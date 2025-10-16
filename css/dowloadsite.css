@@ -1,0 +1,54 @@
+
+
+.left-right {
+    display: flex;
+    font-size: 25px;
+    /* justify-content: center; */
+    gap: 150px;
+    margin: 50px;
+}
+ /* td1~4 */
+.table-1 {
+    width: 50px;
+    padding: 18px;
+    text-align: center;
+}
+
+.table-2 {
+    height: 100px;
+    padding: 30px;
+    text-align: left;
+}
+
+.table-3 {
+    width: 50px;
+    text-align: center;
+}
+
+.table-4 {
+    text-align: center;
+}
+
+ /* 表格 */
+.table {
+  border-collapse: collapse;
+  width: 120%;
+  height: auto;
+}
+
+table,
+th,
+td {
+  border: 3px solid #fcfcfc;
+}
+
+.title-dowload {
+  display: flex;
+  unicode-bidi: isolate;
+  padding: 50px;
+  border-top: 3px solid rgba(214, 199, 199, 0.912);
+  border-bottom: 3px solid rgba(214, 199, 199, 0.912);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}

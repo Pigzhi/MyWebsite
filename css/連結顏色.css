@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: Arial;
@@ -15,29 +16,63 @@ body, html {
   cursor: pointer;
   padding: 14px 16px;
   width: 25%;
-  
+
 }
 
 .tablink:hover {
   background-color: #534f4f;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: rgb(0, 0, 0);
   display: none;
-  padding: 100px 20px;
+  /* padding: 100px 20px; */
+  padding: 0px;
   height: 100%;
 }
 
 
-#Home {background-color: rgb(255, 255, 255);}
-#Cloth {background-color: rgb(255, 255, 255);}
-#pants {background-color: rgb(255, 255, 255);}
-#shoes {background-color: rgb(255, 255, 255);}
 
-.status{
+#Home {
+  background-color: rgb(255, 255, 255);
+}
+
+#Cloth {
+  background-color: rgb(255, 255, 255);
+}
+
+#pants {
+  background-color: rgb(255, 255, 255);
+}
+
+#shoes {
+  background-color: rgb(255, 255, 255);
+}
+
+.status {
   font-size: 47px;
   text-align: center;
   color: rgb(72, 24, 72);
+}
+
+
+.table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 3px solid #fcfcfc;
+}
+
+.title-dowload {
+  display: flex;
+  unicode-bidi: isolate;
+  padding: 50px;
+  border-top: 3px solid rgba(214, 199, 199, 0.912);
+  border-bottom: 3px solid rgba(214, 199, 199, 0.912);
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
