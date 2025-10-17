@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./css/公告.css">
     <link rel="stylesheet" href="./css/字體.css">
     <link rel="stylesheet" href="./css/dowloadsite.css">
+    <link rel="stylesheet" href="./css/jobs.css">
+    <script src="./_js/jquery-3.7.1.js"></script>
+    <script src="./_js/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="./_js/sweetalert2.css">
 
     <style>
         body {
@@ -331,40 +335,47 @@
     </div>
     <!-- 第四頁 -->
     <div id="shoes" class="tabcontent">
-        <section style="background-color: rgb(43, 37, 37);"><!-- 整塊的放圖片用 -->
-            <div class="title-dowload">
+        <section class="block-jobs"><!-- 整塊的放圖片用 -->
+            <div class="title-dowload-1">
                 <img src="./photo/職業介紹.png">
             </div>
+            <div class="overlay"> </div> <!--遮罩-->
+            <div class="pop"><!--彈出的框-->
+                <span class="close-btn">&times;</span>
+                <p></p>
+            </div>
             <div>
-                <div>
-                    <a href="">
-                        <img src="./photo/聖騎士.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./photo/主教.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./photo/冰雷.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./photo/箭神.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./photo/夜使者.png" alt="">
-                    </a>
-                </div>
-                <div>
-                    <a href="">
-                        <img src="./photo/拳霸.png" alt="">
-                    </a>
+                <div class="jobs">
+                    <div class="jobs-fa" data-text="我是123456789">
+                        <div class="jobs-1">
+                            <img src="./photo/聖騎士.png" alt="">
+                        </div>
+                    </div>
+                    <div class="jobs-fa">
+                        <div class="jobs-1">
+                            <img src="./photo/主教.png" alt="">
+                        </div>
+                    </div>
+                    <div class="jobs-fa">
+                        <div class="jobs-1">
+                            <img src="./photo/冰雷.png" alt="">
+                        </div>
+                    </div>
+                    <div class="jobs-fa">
+                        <div class="jobs-1">
+                            <img src="./photo/箭神.png" alt="">
+                        </div>
+                    </div>
+                    <div class="jobs-fa">
+                        <div class="jobs-1">
+                            <img src="./photo/夜使者.png" alt="">
+                        </div>
+                    </div>
+                    <div class="jobs-fa">
+                        <div class="jobs-1">
+                            <img src="./photo/拳霸.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -438,6 +449,74 @@
         }
         // news
         // $('#news').append(`<li>${new1}</li>`)
+
+        //jobs滑鼠摸了的反應
+        const jobs1 = document.querySelectorAll('.jobs-1')
+        // console.log(jobs1);
+        jobs1.forEach(box => {
+            const img = box.querySelector('img')
+            console.log(img);
+            box.addEventListener('mouseenter', function () {
+                img.style.transform = 'scale(1.2)';
+                img.style.filter = 'brightness(1.3)';
+                box.style.transform = 'translateY(-40px)'
+                box.style.boxShadow =
+                    '0px 0px 30px rgba(2, 199, 249, 0.4),' +
+                    '0px 0px 60px rgba(16, 170, 235, 0.6),' +
+                    '0px 0px 90px rgba(52, 32, 299, 0.8)';
+                console.log(img.style.boxShadow);
+
+
+            });
+            box.addEventListener('mouseleave', function () {
+                img.style.transform = 'scale(1.0)';
+                img.style.filter = 'brightness(1)';
+                box.style.transform = 'translateY(0px)'
+                box.style.boxShadow = '0 4px 10px rgba(0,0,0,0.2)';
+            })
+
+        })
+
+        //彈出框
+
+        $(function () {
+            $('.jobs-fa').click(function () {
+                Swal.fire({
+                    title: "Sweet!",
+                    text: "Modal with a custom image.Modal with a custom image.Modal with a custom image.",
+                    imageUrl: 'photo/彈框1.jpg',
+                    imageWidth: 1800,
+                    imageHeight: 300,
+                    imageAlt: "Custom image",
+                    backdrop: ` rgba(22, 21, 21 , 0.8)`,
+                    background: "url(photo/彈框1-1.jpg)",
+                    color: "#ffffff"
+                });
+            })
+        })
+        // $(function () {
+        //     $('.jobs-fa').click(function () {
+        //         const text = $(this).data('text');
+        //         //    console.log(text);
+        //         $('.pop p').text(text);
+        //         $('.overlay').fadeIn(600);
+        //         $('.pop').css('display', 'block')
+
+        //         setTimeout(() => {
+        //             $('.pop').addClass('show')
+        //         }, 10);
+        //     })
+        //     //關閉
+        //     $('.overlay,.close-btn').click(function () {
+        //         $('.pop').removeClass('show');
+        //         setTimeout(() => {
+        //             $('.pop').css('display', 'none');
+        //             $('.overlay').fadeOut(200);
+        //         }, 300);
+        //     })
+        // })
+
+
     </script>
 </body>
 

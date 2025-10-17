@@ -56,23 +56,3 @@ html {
 }
 
 
-.table {
-  border-collapse: collapse;
-}
-
-table,
-th,
-td {
-  border: 3px solid #fcfcfc;
-}
-
-.title-dowload {
-  display: flex;
-  unicode-bidi: isolate;
-  padding: 50px;
-  border-top: 3px solid rgba(214, 199, 199, 0.912);
-  border-bottom: 3px solid rgba(214, 199, 199, 0.912);
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-}

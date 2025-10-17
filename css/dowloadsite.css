@@ -52,3 +52,9 @@ td {
   justify-content: center;
   align-items: center;
 }
+.title-dowload-1{
+  display: flex;
+  padding:50px ;
+  align-items: center;
+  justify-content: center;
+}
