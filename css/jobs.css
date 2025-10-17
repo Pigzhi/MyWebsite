@@ -47,7 +47,10 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 5;
 }
-/* 彈出的框 */
+
+
+
+/* 彈出的框         --0---沒用到           */ 
 .pop{
     display: none; /*隱藏*/
     position: absolute;
